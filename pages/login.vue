@@ -29,11 +29,10 @@
                 </v-btn>
                 <v-spacer></v-spacer>
                 <v-btn block color="primary" @click="login" :loading="loading">Login</v-btn>
-                <v-btn block color="primary" @click="scrollable.dialog = true">alert</v-btn>
-              </v-card-actions>
+                </v-card-actions>
             </v-card>
           </v-flex>
-          <fx-dialog title="제목" msg="아이디 및 비밀번호를 확인해 주세요"/>
+          
         </v-layout>
       </v-container>
     </v-content>
@@ -81,7 +80,7 @@ import AppDrawer from '../components/AppDrawer.vue';
               if(result.result){ 
                 this.$router.push('/dashboard')
               }else{
-                alert('오류')
+                this.$fxAlert('비밀번호를 다시 입력해주시기 바랍니다.')
               }
           }).finally(() => {
             this.loading = false

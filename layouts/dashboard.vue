@@ -1,5 +1,6 @@
 <template>
   <div id="appRoot">
+    <fx-dialog title="제목" msg="아이디 및 비밀번호를 확인해 주세요" />
     <template>
       <v-app id="inspire" class="app">
         <app-drawer class="app--drawer"></app-drawer>

@@ -1,5 +1,7 @@
 export const state = () => ({
-  drawer: true
+  drawer: true,
+  alertMsg : '',
+  isShowAlert : false
 })
 
 export const mutations = {
@@ -8,5 +10,13 @@ export const mutations = {
   },
   drawer(state, val) {
     state.drawer = val
-  }
+  },
+  setAlertMsg(state,val){
+    state.alertMsg = val
+  },
+  setShowAlert(state,val){
+    state.isShowAlert = val
+  }  
 }
+
+

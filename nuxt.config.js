@@ -52,7 +52,8 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vuetify',
-    '@/plugins/component',
+    '@/plugins/global-component',
+    '@/plugins/global-properties',
     '@/plugins/vee-validate'
   ],
 
